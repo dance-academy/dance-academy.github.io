@@ -14,7 +14,19 @@
 <title>Dance Academy</title>
 <!-- write your code here -->
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="Dance Academy.js?1695056084097"></script>
+<script src="Dance Academy.js?1695852955202"></script>
+<script>
+// Global Scripts
+	window.addEventListener("load", (event) => {
+	document.body.style.overflow = "hidden";
+	const getCanvas = document.getElementById("canvas");
+	getCanvas.width = "100%"//window.innerWidth;
+	getCanvas.height = "100%"//window.innerHeight;
+	getCanvas.style.width = "100%"//window.innerWidth;
+	getCanvas.style.height = "100%"//window.innerHeight;
+	document.getElementById("animation_container").style.width = window.innerWidth;
+	document.getElementById("animation_container").style.height = window.innerHeight;
+});</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
